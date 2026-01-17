@@ -1,0 +1,29 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.env
+
+# Dataset (DO NOT UPLOAD)
+amazon_reviews.csv
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node / frontend junk (if any)
+node_modules/
+
+# Training artifacts (optional)
+training_scatter.png
+
+# IDE
+.vscode/
+.idea/
