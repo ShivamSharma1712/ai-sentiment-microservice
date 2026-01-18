@@ -10,7 +10,7 @@ from utils.prediction import predict_sentiment
 # Logging Configuration
 # -------------------------------
 logging.basicConfig(
-    filename="requests.log",           # log file
+    filename="requests.log",
     level=logging.INFO,
     format="%(asctime)s | %(message)s"
 )
@@ -24,8 +24,8 @@ CORS(app)
 api = Api(
     app,
     title="AI Sentiment Analysis Microservice",
-    description="ANN + HuggingFace + VADER based sentiment analysis",
-    doc="/docs"   # Swagger UI URL
+    description="ANN + VADER based sentiment analysis microservice",
+    doc="/docs"
 )
 
 ns = api.namespace("sentiment", description="Sentiment Operations")
